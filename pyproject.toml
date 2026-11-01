@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voiceagent"
+version = "0.1.0"
+description = "Low-latency streaming voice agent: streaming ASR and TTS resident on a 4 GB laptop GPU, swappable cloud LLM."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Kuldeep"}]
+keywords = [
+  "voice-agent", "speech-recognition", "text-to-speech", "streaming", "low-latency",
+  "barge-in", "vad", "webrtc", "kokoro", "nemotron",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy",
+  "httpx[http2]",
+  "pydantic>=2",
+  "pyyaml",
+  "python-dotenv",
+]
+
+[project.optional-dependencies]
+# torch and torchaudio are installed separately, from the CUDA wheel index that matches nvidia-smi.
+models = [
+  "transformers>=5.13",
+  "huggingface_hub",
+  "kokoro>=0.9.4",
+  "misaki[en]",
+  "soundfile",
+  "silero-vad",
+  "onnxruntime",
+]
+# fastrtc 0.0.34 requires gradio 5.x; without the bound the resolver falls back to the empty fastrtc 0.0.1.
+ui = ["gradio>=5.50,<6", "fastrtc[vad]>=0.0.34", "fastapi", "uvicorn"]
+# sounddevice: scripts/record_utterances.py; pyarrow: scripts/fetch_eval_audio.py;
+# matplotlib: scripts/plot_results.py.
+dev = ["pytest", "pytest-asyncio", "ruff", "sounddevice", "pyarrow", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"voiceagent.ui" = ["web/*.html", "web/*.css", "web/js/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-m 'not integration'"
+markers = ["integration: needs a GPU, model weights or the network"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "scripts"]

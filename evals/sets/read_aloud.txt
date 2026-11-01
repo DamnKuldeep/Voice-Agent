@@ -1,0 +1,30 @@
+What's the weather like today?
+Can you tell me a quick joke?
+How far is the moon from the Earth?
+Set a reminder to call my mother at six thirty tomorrow evening.
+I need to book a train ticket from Roorkee to Delhi for next Friday.
+What is the difference between a process and a thread?
+My interview is tomorrow morning and I am a little nervous.
+Explain step by step how a neural network learns.
+How much is twelve thousand five hundred rupees in dollars?
+Who wrote The Discovery of India?
+Can you repeat that more slowly?
+Yes.
+No, I meant the other one.
+Tell me about the history of the Taj Mahal in a few sentences.
+What should I cook for dinner if I only have rice, lentils and onions?
+I was thinking we could, um, maybe start with the budget and then move on to the schedule.
+Why does the sky look blue during the day but red at sunset?
+Translate good morning into Hindi, please.
+What is two hundred and forty divided by eight?
+Please summarise the main idea of supply and demand.
+I want to learn guitar but I only have thirty minutes a day. Where should I start?
+Is it safe to drink water straight from the tap in most cities?
+What time does the sun rise in Mumbai in November?
+Give me three tips for staying focused while studying.
+Hey, are you there?
+Stop. Actually, tell me something else.
+How do I reset my password if I no longer have access to my email?
+What is the capital of Australia, and why is it not Sydney?
+Read that number back to me: nine eight seven six five four three two one zero.
+Thanks, that was really helpful.

@@ -1,0 +1,93 @@
+# Every behaviour that can be switched on or off for comparison lives here.
+# The UI and scripts/run_eval.py override these per run; nothing is hard-coded in the pipeline.
+# D-NNN ids point to docs/design-decisions.md; the measurements behind them are in docs/benchmarks.md.
+devices:
+  asr: cuda:0
+  tts: cuda:0
+  vad: cpu
+  turn: cpu
+  require_full_gpu_residency: true   # fail at startup if any ASR/TTS parameter sits on the CPU
+  cpu_threads: 2                     # torch CPU threads; the default (all cores) made the ASR 30% slower (0.75 vs 0.52 RTF)
+
+audio:
+  analysis_rate: 16000               # VAD, turn model and ASR all consume 16 kHz mono
+  output_rate: 24000                 # Kokoro native rate
+  frame_ms: 32                       # one Silero frame at 16 kHz is 512 samples
+
+vad:
+  threshold: 0.5
+  min_speech_ms: 200                 # shorter blips (coughs, clicks) never start a turn
+  pre_roll_ms: 300                   # audio kept from before speech onset so first words are not clipped
+  gate_asr: false                    # false: the whole turn reaches the ASR, so a soft last word the VAD misses is still heard (D-023)
+  end_hangover_ms: 96                # speech must stay below the release threshold this long before end-of-speech
+
+turn:
+  detector: smart_turn               # smart_turn | silence
+  min_silence_ms: 300                # earliest commit when the turn model says "finished" (300 beat 150 in A/B runs, D-022)
+  max_silence_ms: 900                # latest commit, when it says "still talking"
+  silence_only_ms: 500               # fixed commit delay when detector is "silence" (or no turn model is loaded)
+  complete_prob: 0.7
+  incomplete_prob: 0.3
+  hold_trailing_words: [and, but, so, because, or, um, uh, like, then, if]
+
+speculation:
+  enabled: true                      # start the LLM on a stable partial transcript before the turn is committed
+  start_silence_ms: 200
+  stable_chunks: 1                   # partial transcript must be unchanged for this many ASR chunks (560 ms each)
+
+asr:
+  backend: nemotron                  # the only recogniser implemented (see pipeline/factory.py)
+  model: nvidia/nemotron-speech-streaming-en-0.6b
+  chunk_ms: 560                      # 80 | 160 | 560 | 1120; 560 stays real-time while TTS runs (D-021)
+  dtype: float16
+  flush_chunks: 2                    # silent chunks pushed at end of turn; 2 kept 130/150 last words vs 126 with 1 (D-023)
+  tail_ms: 160                       # real mic audio fed after the commit before finishing, so a soft last word survives
+
+llm:
+  model: meta-llama/llama-3.3-70b-instruct   # TTFT p50 0.20 s @groq>coreweave, n=30 (scripts/bench_llm.py); fewer guesses than 8b
+  fallback_models: [meta-llama/llama-3.1-8b-instruct, openai/gpt-4.1-nano]
+  routing_sort: latency              # latency | throughput | price | default
+  provider_order: [groq, coreweave]  # OpenRouter provider slugs tried first, in order; empty: routing_sort decides
+  stream: true                       # false: wait for the whole reply before TTS
+  ttft_timeout_s: 2.5                # no first token by then: cancel and try the next fallback model
+  hedge_after_s: 0.8                 # no first token by then: start the next model alongside, first to speak wins
+  temperature: 0.5
+  history_turns: 6
+  prewarm_connection: true           # open the HTTPS connection at session start, not on the first turn
+  persona_file: prompts/persona.md
+
+length_policy:
+  enabled: true                      # false: no brevity rules and no hard cap, to measure what they buy
+  brief: {max_tokens: 90}
+  detail: {max_tokens: 220}
+  detail_cues: [explain, in detail, step by step, walk me through, elaborate, tell me more, how does, why does, story]
+
+chunker:
+  first_chunk_min_words: 4           # first speakable chunk: earliest clause boundary after this many words
+  first_chunk_max_words: 8           # ...or force a break at this many words
+  chunk_max_words: 25                # later chunks break at sentence ends, bounded by this
+
+tts:
+  backend: kokoro
+  voice: af_heart
+  speed: 1.0
+  stream: true                       # false: synthesise the whole reply, then play
+  prefetch_chunks: 1                 # synthesise chunk n+1 while chunk n plays
+  warmup: true
+  fillers: false                     # pre-rendered "hmm, let me think" if the LLM is slow
+  filler_after_ms: 900
+
+barge_in:
+  enabled: true
+  min_speech_ms: 150                 # speech before the agent ducks its voice; 150 ducked in 135 ms vs 219, no extra false stops (D-024)
+  vad_threshold: 0.6                 # stricter than normal, to resist echo and noise
+  ignore_backchannels: true          # "uh-huh", "yeah" under backchannel_max_ms do not interrupt
+  backchannel_max_ms: 700
+  duck_gain: 0.25                    # playback volume while a possible interruption is being checked
+  echo_guard: false                  # speakers only: ignore "interruptions" that repeat what the agent just said (D-023)
+
+ui:
+  host: 127.0.0.1
+  port: 7860
+  share: false
+  transport: auto                    # auto: WebRTC on this machine, WebSocket through the shared link | webrtc | websocket

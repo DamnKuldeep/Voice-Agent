@@ -1,0 +1,31 @@
+# secrets and local state
+.env
+.venv/
+venv/
+.claude/
+.dev-notes/
+.vscode/
+.idea/
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# models, caches and binaries
+.cache/
+models/
+cloudflared*.exe
+
+# generated outputs (evaluation results, conversation traces, recordings)
+evals/results/*
+!evals/results/.gitkeep
+evals/audio/*
+!evals/audio/.gitkeep
+evals/sets/utterances.yaml
+*.zip
+*.log

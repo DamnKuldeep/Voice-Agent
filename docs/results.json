@@ -1,0 +1,158 @@
+{
+  "_about": "Measured on one laptop (RTX 3050 Laptop 4 GB, clocks locked at 1,500 MHz, Windows 11) with scripts/run_eval.py and the bench_*.py scripts. Public speech only (Common Voice Indian-accent, AI4Bharat Svarah, LibriSpeech); none of it is the author's voice. 'before' = first working version; 'after' = the released defaults. scripts/plot_results.py draws docs/assets/*.png from this file.",
+  "latency_stages_p50_ms": {
+    "_n": 30,
+    "_source": "listening set, released defaults (run listen_tailfix)",
+    "Wait until sure you finished": 404,
+    "Final transcript": 159,
+    "LLM first token": 174,
+    "First speakable chunk": 36,
+    "TTS first audio": 155
+  },
+  "voice_to_voice_ms": {
+    "_n": 30,
+    "before": {
+      "p50": 1106,
+      "p90": 1635
+    },
+    "after": {
+      "p50": 1004,
+      "p90": 1427
+    },
+    "_note": "three runs of the released config gave p50 1,004-1,093 ms and p90 1,394-1,496 ms"
+  },
+  "listening_errors_pct": {
+    "_n": 30,
+    "_note": "rates are % of clips; WER is % of 516 reference words",
+    "before": {
+      "Last word missing or wrong": 30,
+      "Sentence split by early commit": 27,
+      "Word error rate": 9.7
+    },
+    "after": {
+      "Last word missing or wrong": 23,
+      "Sentence split by early commit": 17,
+      "Word error rate": 8.9
+    }
+  },
+  "asr_rtf_contention": {
+    "_n": 15,
+    "_note": "real-time factor = compute time / audio time; above 1.0 the recogniser falls behind",
+    "conditions": [
+      "ASR alone",
+      "+ busy Python thread",
+      "+ TTS synthesising"
+    ],
+    "160 ms chunks": [
+      0.43,
+      0.66,
+      1.28
+    ],
+    "560 ms chunks": [
+      0.23,
+      0.35,
+      0.42
+    ]
+  },
+  "asr_wer_by_source_pct": {
+    "_n": "150 clips (60 / 60 / 30)",
+    "sources": [
+      "LibriSpeech (US, clean)",
+      "Common Voice (Indian accent)",
+      "Svarah (Indian accents)"
+    ],
+    "160 ms chunks": [
+      5.3,
+      10.6,
+      21.5
+    ],
+    "560 ms chunks": [
+      5.3,
+      9.9,
+      18.8
+    ]
+  },
+  "interruption_ms": {
+    "_n": "9 trials with a voice-activity onset per condition (6 real interruptions, 3 backchannels); 3 coughs",
+    "_note": "trace metrics from the moment voice activity is detected in the interrupting speech; the same measure before and after",
+    "before": {
+      "yield_p50": null,
+      "stop_p50": 648,
+      "stop_p90": 719
+    },
+    "after": {
+      "yield_p50": 129,
+      "yield_p90": 145,
+      "stop_p50": 669,
+      "stop_p90": 713
+    },
+    "false_stops_after": {
+      "backchannel": "0/3",
+      "cough": "0/3"
+    }
+  },
+  "llm_ttft_s": {
+    "_n": "20-40 requests each, interleaved, with a 6-exchange history",
+    "rows": [
+      {
+        "label": "Llama 3.1 8B @ Groq",
+        "p50": 0.18,
+        "p90": 0.23,
+        "usd_per_1k_turns": 0.027
+      },
+      {
+        "label": "Llama 3.3 70B @ Groq > CoreWeave (default)",
+        "p50": 0.2,
+        "p90": 0.24,
+        "usd_per_1k_turns": 0.31,
+        "chosen": true
+      },
+      {
+        "label": "Llama 3.3 70B @ CoreWeave",
+        "p50": 0.37,
+        "p90": 0.48,
+        "usd_per_1k_turns": 0.35
+      },
+      {
+        "label": "GPT-OSS 20B @ CoreWeave",
+        "p50": 0.49,
+        "p90": 0.73,
+        "usd_per_1k_turns": 0.022
+      },
+      {
+        "label": "GPT-OSS 120B @ Groq",
+        "p50": 0.52,
+        "p90": 3.73,
+        "usd_per_1k_turns": 0.097
+      },
+      {
+        "label": "DeepSeek V4.1 Flash (auto)",
+        "p50": 0.86,
+        "p90": 3.91,
+        "usd_per_1k_turns": 0.064
+      }
+    ]
+  },
+  "tts_first_audio_ms": {
+    "_n": 30,
+    "4 words": {
+      "p50": 106,
+      "p90": 156
+    },
+    "8 words": {
+      "p50": 153,
+      "p90": 206
+    },
+    "25 words": {
+      "p50": 262,
+      "p90": 331
+    }
+  },
+  "vram_mib": {
+    "_source": "both models resident, worst-case turn (29 s of speech + three 25-word syntheses)",
+    "total": 4096,
+    "budget": 3686,
+    "Windows and other apps": 177,
+    "Voice agent (CUDA context + ASR + TTS)": 2174
+  }
+}

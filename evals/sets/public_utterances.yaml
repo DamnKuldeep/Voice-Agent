@@ -1,0 +1,710 @@
+utterances:
+- id: cv_in_000
+  file: evals/audio/cv_in_000.wav
+  text: There is a digital representation available.
+  source: common_voice_indian_accent
+- id: cv_in_001
+  file: evals/audio/cv_in_001.wav
+  text: He kept driving at full speed, totally unfazed by the flap, flap, flap of
+    the burst tyre.
+  source: common_voice_indian_accent
+- id: cv_in_002
+  file: evals/audio/cv_in_002.wav
+  text: He kept driving at full speed, totally unfazed by the flap, flap, flap of
+    the burst tyre.
+  source: common_voice_indian_accent
+- id: cv_in_003
+  file: evals/audio/cv_in_003.wav
+  text: Mr. and Mrs. Edward Tobler came a week later.
+  source: common_voice_indian_accent
+- id: cv_in_004
+  file: evals/audio/cv_in_004.wav
+  text: Lehrer placed advertisements near Jaffa port asking others to join him.
+  source: common_voice_indian_accent
+- id: cv_in_005
+  file: evals/audio/cv_in_005.wav
+  text: The paternity of the two children became a matter of dispute.
+  source: common_voice_indian_accent
+- id: cv_in_006
+  file: evals/audio/cv_in_006.wav
+  text: University faculty and distinguished affiliates are associated with the colleges
+    as fellows.
+  source: common_voice_indian_accent
+- id: cv_in_007
+  file: evals/audio/cv_in_007.wav
+  text: Oxazoles are aromatic compounds but less so than the thiazoles.
+  source: common_voice_indian_accent
+- id: cv_in_008
+  file: evals/audio/cv_in_008.wav
+  text: At the top, whey proteins form a skin, which is removed.
+  source: common_voice_indian_accent
+- id: cv_in_009
+  file: evals/audio/cv_in_009.wav
+  text: After throwing the Assassin off the tower, Susan clears the teeth away.
+  source: common_voice_indian_accent
+- id: cv_in_010
+  file: evals/audio/cv_in_010.wav
+  text: She and Levesque have three daughters.
+  source: common_voice_indian_accent
+- id: cv_in_011
+  file: evals/audio/cv_in_011.wav
+  text: To increase his popularity in public-opinion polls, the politician started
+    a campaign.
+  source: common_voice_indian_accent
+- id: cv_in_012
+  file: evals/audio/cv_in_012.wav
+  text: To increase his popularity in public-opinion polls, the politician started
+    a campaign.
+  source: common_voice_indian_accent
+- id: cv_in_013
+  file: evals/audio/cv_in_013.wav
+  text: The gallant noble, good man thinks of himself last.
+  source: common_voice_indian_accent
+- id: cv_in_014
+  file: evals/audio/cv_in_014.wav
+  text: The gallant noble, good man thinks of himself last.
+  source: common_voice_indian_accent
+- id: cv_in_015
+  file: evals/audio/cv_in_015.wav
+  text: You lived your life in a loving way, and died with dignity.
+  source: common_voice_indian_accent
+- id: cv_in_016
+  file: evals/audio/cv_in_016.wav
+  text: A local park has been named in his honour.
+  source: common_voice_indian_accent
+- id: cv_in_017
+  file: evals/audio/cv_in_017.wav
+  text: I think the party was an amusement for most of the guests, but Mirco felt
+    really out of place.
+  source: common_voice_indian_accent
+- id: cv_in_018
+  file: evals/audio/cv_in_018.wav
+  text: Continuing into Manalapan Township, the avenue again becomes a residential
+    access road.
+  source: common_voice_indian_accent
+- id: cv_in_019
+  file: evals/audio/cv_in_019.wav
+  text: He trained as both a lawyer and neurosurgeon, and worked in the medical field.
+  source: common_voice_indian_accent
+- id: cv_in_020
+  file: evals/audio/cv_in_020.wav
+  text: But now I'm sad and alone.
+  source: common_voice_indian_accent
+- id: cv_in_021
+  file: evals/audio/cv_in_021.wav
+  text: He looked up at me and smiled.
+  source: common_voice_indian_accent
+- id: cv_in_022
+  file: evals/audio/cv_in_022.wav
+  text: At any rate, Comrade Outwood loves us.
+  source: common_voice_indian_accent
+- id: cv_in_023
+  file: evals/audio/cv_in_023.wav
+  text: Why, doggone you all, shake again.
+  source: common_voice_indian_accent
+- id: cv_in_024
+  file: evals/audio/cv_in_024.wav
+  text: He was also one of the founders of Texaco Oil Company.
+  source: common_voice_indian_accent
+- id: cv_in_025
+  file: evals/audio/cv_in_025.wav
+  text: The two main groups of squat lobsters share most features of their morphology.
+  source: common_voice_indian_accent
+- id: cv_in_026
+  file: evals/audio/cv_in_026.wav
+  text: Wow, this is a nice table!
+  source: common_voice_indian_accent
+- id: cv_in_027
+  file: evals/audio/cv_in_027.wav
+  text: Wow, this is a nice table!
+  source: common_voice_indian_accent
+- id: cv_in_028
+  file: evals/audio/cv_in_028.wav
+  text: You made your bed, now you must lie in it.
+  source: common_voice_indian_accent
+- id: cv_in_029
+  file: evals/audio/cv_in_029.wav
+  text: The band started to play a mix of groove metal and metalcore.
+  source: common_voice_indian_accent
+- id: cv_in_030
+  file: evals/audio/cv_in_030.wav
+  text: It is believed only two aircraft were ever outfitted with it.
+  source: common_voice_indian_accent
+- id: cv_in_031
+  file: evals/audio/cv_in_031.wav
+  text: She has a smart way of wearing clothes.
+  source: common_voice_indian_accent
+- id: cv_in_032
+  file: evals/audio/cv_in_032.wav
+  text: Can I help you pack?
+  source: common_voice_indian_accent
+- id: cv_in_033
+  file: evals/audio/cv_in_033.wav
+  text: What do you want here today? the desert asked him.
+  source: common_voice_indian_accent
+- id: cv_in_034
+  file: evals/audio/cv_in_034.wav
+  text: Finding effective options for extracting valuable fuels from the unwanted
+    material is economically attractive.
+  source: common_voice_indian_accent
+- id: cv_in_035
+  file: evals/audio/cv_in_035.wav
+  text: Five species are recognized.
+  source: common_voice_indian_accent
+- id: cv_in_036
+  file: evals/audio/cv_in_036.wav
+  text: He continued to build middle-class homes.
+  source: common_voice_indian_accent
+- id: cv_in_037
+  file: evals/audio/cv_in_037.wav
+  text: Not specifically no, he only gave me the gist of his research the one time
+    I spoke to him.
+  source: common_voice_indian_accent
+- id: cv_in_038
+  file: evals/audio/cv_in_038.wav
+  text: Not specifically no, he only gave me the gist of his research the one time
+    I spoke to him.
+  source: common_voice_indian_accent
+- id: cv_in_039
+  file: evals/audio/cv_in_039.wav
+  text: Meg is now married to Calvin and is expecting their first child.
+  source: common_voice_indian_accent
+- id: cv_in_040
+  file: evals/audio/cv_in_040.wav
+  text: Love sees no faults.
+  source: common_voice_indian_accent
+- id: cv_in_041
+  file: evals/audio/cv_in_041.wav
+  text: Zimbabwe has been blessed with many world-class rugby players over the years.
+  source: common_voice_indian_accent
+- id: cv_in_042
+  file: evals/audio/cv_in_042.wav
+  text: Beau Casson, another Australian is another fine left arm chinaman bowler.
+  source: common_voice_indian_accent
+- id: cv_in_043
+  file: evals/audio/cv_in_043.wav
+  text: You never know what you can do till you try.
+  source: common_voice_indian_accent
+- id: cv_in_044
+  file: evals/audio/cv_in_044.wav
+  text: Without understanding the actual physics, some animals exploit total internal
+    reflection for catching fish.
+  source: common_voice_indian_accent
+- id: cv_in_045
+  file: evals/audio/cv_in_045.wav
+  text: Her mother, of German and Italian descent, is the daughter of artists.
+  source: common_voice_indian_accent
+- id: cv_in_046
+  file: evals/audio/cv_in_046.wav
+  text: George is married to Usha George.
+  source: common_voice_indian_accent
+- id: cv_in_047
+  file: evals/audio/cv_in_047.wav
+  text: She currently stars as Dodo Bellacourt on the Comedy Central series "Another
+    Period".
+  source: common_voice_indian_accent
+- id: cv_in_048
+  file: evals/audio/cv_in_048.wav
+  text: Over the next five years, Caldera Systems offered additional commercial extensions
+    to Linux.
+  source: common_voice_indian_accent
+- id: cv_in_049
+  file: evals/audio/cv_in_049.wav
+  text: Make hay while the sun shines.
+  source: common_voice_indian_accent
+- id: cv_in_050
+  file: evals/audio/cv_in_050.wav
+  text: It would be hard for New York or Philadelphia to indicate his superior.
+  source: common_voice_indian_accent
+- id: cv_in_051
+  file: evals/audio/cv_in_051.wav
+  text: Then, taking his sheep, he walked away.
+  source: common_voice_indian_accent
+- id: cv_in_052
+  file: evals/audio/cv_in_052.wav
+  text: They toured with Paul Weller and Razorlight.
+  source: common_voice_indian_accent
+- id: cv_in_053
+  file: evals/audio/cv_in_053.wav
+  text: He that hurts another, hurts himself.
+  source: common_voice_indian_accent
+- id: cv_in_054
+  file: evals/audio/cv_in_054.wav
+  text: Throughout the year, many people come to the beaches of Sanibel to gather
+    shells.
+  source: common_voice_indian_accent
+- id: cv_in_055
+  file: evals/audio/cv_in_055.wav
+  text: Loveless helped to align Iowa's Democratic Party more closely with its national
+    counterpart.
+  source: common_voice_indian_accent
+- id: cv_in_056
+  file: evals/audio/cv_in_056.wav
+  text: He oversaw the transition of the Danish navy from sail to early steam power.
+  source: common_voice_indian_accent
+- id: cv_in_057
+  file: evals/audio/cv_in_057.wav
+  text: After that date, the production moved to Brasserie Union in Jumet.
+  source: common_voice_indian_accent
+- id: cv_in_058
+  file: evals/audio/cv_in_058.wav
+  text: The desert was all sand in some stretches, and rocky in others.
+  source: common_voice_indian_accent
+- id: cv_in_059
+  file: evals/audio/cv_in_059.wav
+  text: However, "natural limits" cannot be granted too elastic a definition.
+  source: common_voice_indian_accent
+- id: svarah_000
+  file: evals/audio/svarah_000.wav
+  text: named A Woman of No Importance by Oscar Wilde. And the quote is that every
+    saint has a past and every sinner has a future
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Hindi
+- id: svarah_001
+  file: evals/audio/svarah_001.wav
+  text: I always like to sing filmy music
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Marathi
+- id: svarah_002
+  file: evals/audio/svarah_002.wav
+  text: The child's head is shaven and the hair is then symbolically offered to the
+    holy river.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Odia
+- id: svarah_003
+  file: evals/audio/svarah_003.wav
+  text: But according to me, English is a language and we couldn't consider any language
+    as a symbol of literacy.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Dogri
+- id: svarah_004
+  file: evals/audio/svarah_004.wav
+  text: I started growing my own vegetables on the rooftop garden last year and it
+    is a wonderful experience.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Maithili
+- id: svarah_005
+  file: evals/audio/svarah_005.wav
+  text: My all-time favorite book is Thirukkural written by Thiruvallabh.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Nepali
+- id: svarah_006
+  file: evals/audio/svarah_006.wav
+  text: What are the items in Processed Food items with the offer of minimum 40 %
+    ?
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Kannada
+- id: svarah_007
+  file: evals/audio/svarah_007.wav
+  text: Are there any chances of Desserts being available by this month ?
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Bengali
+- id: svarah_008
+  file: evals/audio/svarah_008.wav
+  text: And more importantly, practice is must.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Punjabi
+- id: svarah_009
+  file: evals/audio/svarah_009.wav
+  text: You are 2 hours late than the delivery time for my products Pantene Bamboo
+    Shampoo and 24 Mantra Chana Dal
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Telugu
+- id: svarah_010
+  file: evals/audio/svarah_010.wav
+  text: It then comprised of a smaller area
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Urdu
+- id: svarah_011
+  file: evals/audio/svarah_011.wav
+  text: some southern states and some northeastern states
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Malayalam
+- id: svarah_012
+  file: evals/audio/svarah_012.wav
+  text: is how to use a computer
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Kashmiri
+- id: svarah_013
+  file: evals/audio/svarah_013.wav
+  text: and Gauhar as the beneficiary name for vaccine registration
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Konkani
+- id: svarah_014
+  file: evals/audio/svarah_014.wav
+  text: I have learnt English by watching a lot of television.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Sindhi
+- id: svarah_015
+  file: evals/audio/svarah_015.wav
+  text: And its creation signifies the transformation of a universe of suffering into
+    joy.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Bodo
+- id: svarah_016
+  file: evals/audio/svarah_016.wav
+  text: Tell me how to link multiple bank accounts and transfer money between my own
+    accounts in Madhya Pradesh Gramin Bank
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Tamil
+- id: svarah_017
+  file: evals/audio/svarah_017.wav
+  text: relaxed riding And the sound of the engine
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Assamese
+- id: svarah_018
+  file: evals/audio/svarah_018.wav
+  text: humorous elements in it make me revisit this book over and over again.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Gujarati
+- id: svarah_019
+  file: evals/audio/svarah_019.wav
+  text: So this is how the politics is arranged in the state of Maharashtra.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Hindi
+- id: svarah_020
+  file: evals/audio/svarah_020.wav
+  text: Chaturdashi is the 14th day of the lunar fortnight.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Marathi
+- id: svarah_021
+  file: evals/audio/svarah_021.wav
+  text: Both Al-Jazeera and the editors of the Boston, Massachusetts-based paper have
+    also called for her safe release.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Odia
+- id: svarah_022
+  file: evals/audio/svarah_022.wav
+  text: Most memorable trip of me was last year
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Dogri
+- id: svarah_023
+  file: evals/audio/svarah_023.wav
+  text: Then again when we go to the April that there is Sattu Vines
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Maithili
+- id: svarah_024
+  file: evals/audio/svarah_024.wav
+  text: Show the list of restaurants I paid through Citrus last week.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Nepali
+- id: svarah_025
+  file: evals/audio/svarah_025.wav
+  text: though okay, but making it compulsory or a kind of
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Kannada
+- id: svarah_026
+  file: evals/audio/svarah_026.wav
+  text: Book a HP gas cylinder using my registered contact number 79083174897
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Bengali
+- id: svarah_027
+  file: evals/audio/svarah_027.wav
+  text: Besides, there are 32 dormitories that can accommodate 1,000 people.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Punjabi
+- id: svarah_028
+  file: evals/audio/svarah_028.wav
+  text: You are 2 hours late than the delivery time for my products Pantene Bamboo
+    Shampoo and 24 Mantra Chana Dal
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Telugu
+- id: svarah_029
+  file: evals/audio/svarah_029.wav
+  text: Thus, in view of such welfare activities
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Urdu
+- id: svarah_030
+  file: evals/audio/svarah_030.wav
+  text: the most widely used language in the world. One
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Malayalam
+- id: svarah_031
+  file: evals/audio/svarah_031.wav
+  text: I also like Levi Skrull's Alice in Wonderland.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Kashmiri
+- id: svarah_032
+  file: evals/audio/svarah_032.wav
+  text: Why did it take 8 hours to deliver my order when I was told that it would
+    be delivered in 7 minutes
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Konkani
+- id: svarah_033
+  file: evals/audio/svarah_033.wav
+  text: like the physical practice of yoga
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Sindhi
+- id: svarah_034
+  file: evals/audio/svarah_034.wav
+  text: where I was trained physical, mental and spiritual
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Bodo
+- id: svarah_035
+  file: evals/audio/svarah_035.wav
+  text: show me the picture of the singer
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Tamil
+- id: svarah_036
+  file: evals/audio/svarah_036.wav
+  text: My writings are science based reflecting new aspects of botany.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Assamese
+- id: svarah_037
+  file: evals/audio/svarah_037.wav
+  text: For example, the civil hospital of Ahmedabad is the best place in Asia to
+    get cancer treated
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Gujarati
+- id: svarah_038
+  file: evals/audio/svarah_038.wav
+  text: Delhi Bus Rapid Transit System runs between Ambedkar Nagar and Delhi Gate.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Hindi
+- id: svarah_039
+  file: evals/audio/svarah_039.wav
+  text: that you find particularly interesting or noteworthy?
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Marathi
+- id: svarah_040
+  file: evals/audio/svarah_040.wav
+  text: There is also an aluminum plant in the district, which is a public sector
+    undertaking, it's called NALCO.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Odia
+- id: svarah_041
+  file: evals/audio/svarah_041.wav
+  text: Where can i get Paid CORBEVAX vaccine?
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Dogri
+- id: svarah_042
+  file: evals/audio/svarah_042.wav
+  text: provide me with the news about iphone
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Maithili
+- id: svarah_043
+  file: evals/audio/svarah_043.wav
+  text: My PRAN number is 834513425591 can you check my current holdings in APY?
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Nepali
+- id: svarah_044
+  file: evals/audio/svarah_044.wav
+  text: I could not do that as my profession was in chemistry and chemical engineering.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Kannada
+- id: svarah_045
+  file: evals/audio/svarah_045.wav
+  text: I think the gene that I got from my father.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Bengali
+- id: svarah_046
+  file: evals/audio/svarah_046.wav
+  text: Yelaneeru Ghat in Kudremukh in Chikkamagaluru district of Karnataka, India
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Punjabi
+- id: svarah_047
+  file: evals/audio/svarah_047.wav
+  text: Hide my personal information from people outside my contact list on PhonePe
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Telugu
+- id: svarah_048
+  file: evals/audio/svarah_048.wav
+  text: Got ill conditioned Colgate Mouthwash
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Urdu
+- id: svarah_049
+  file: evals/audio/svarah_049.wav
+  text: Determine the actions that will have the greatest impact then we
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Malayalam
+- id: svarah_050
+  file: evals/audio/svarah_050.wav
+  text: Private schools provide employment to a lot of youngsters
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Kashmiri
+- id: svarah_051
+  file: evals/audio/svarah_051.wav
+  text: with pincode 169804
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Konkani
+- id: svarah_052
+  file: evals/audio/svarah_052.wav
+  text: I don't provide specific time for singing. I
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Sindhi
+- id: svarah_053
+  file: evals/audio/svarah_053.wav
+  text: Even self-help groups are eligible for this loan.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Bodo
+- id: svarah_054
+  file: evals/audio/svarah_054.wav
+  text: dress, and in terms of language
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Tamil
+- id: svarah_055
+  file: evals/audio/svarah_055.wav
+  text: The items Pediasure Balanced Nutritional Powder
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Assamese
+- id: svarah_056
+  file: evals/audio/svarah_056.wav
+  text: There was a movie called What's your Raashee which was based on that book.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Gujarati
+- id: svarah_057
+  file: evals/audio/svarah_057.wav
+  text: and for news and media to be broadcast in English has come up.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Hindi
+- id: svarah_058
+  file: evals/audio/svarah_058.wav
+  text: We say like, call it a day, so far so good.
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Marathi
+- id: svarah_059
+  file: evals/audio/svarah_059.wav
+  text: Initially when I started this book, I didn't like it as much
+  source: svarah_ai4bharat_cc_by_4
+  mother_tongue: Odia
+- id: libri_000
+  file: evals/audio/libri_000.wav
+  text: mister quilter is the apostle of the middle classes and we are glad to welcome
+    his gospel
+  source: librispeech_dummy
+- id: libri_001
+  file: evals/audio/libri_001.wav
+  text: nor is mister quilter's manner less interesting than his matter
+  source: librispeech_dummy
+- id: libri_002
+  file: evals/audio/libri_002.wav
+  text: he tells us that at this festive season of the year with christmas and roast
+    beef looming before us similes drawn from eating and its results occur most readily
+    to the mind
+  source: librispeech_dummy
+- id: libri_003
+  file: evals/audio/libri_003.wav
+  text: he has grave doubts whether sir frederick leighton's work is really greek
+    after all and can discover in it but little of rocky ithaca
+  source: librispeech_dummy
+- id: libri_004
+  file: evals/audio/libri_004.wav
+  text: linnell's pictures are a sort of up guards and at em paintings and mason's
+    exquisite idylls are as national as a jingo poem mister birket foster's landscapes
+    smile at one much in the same way that mister carker used to flash his teeth and
+    mister john collier gives his sitter a cheerful slap on the back before he says
+    like a shampooer in a turkish bath next man
+  source: librispeech_dummy
+- id: libri_005
+  file: evals/audio/libri_005.wav
+  text: it is obviously unnecessary for us to point out how luminous these criticisms
+    are how delicate in expression
+  source: librispeech_dummy
+- id: libri_006
+  file: evals/audio/libri_006.wav
+  text: on the general principles of art mister quilter writes with equal lucidity
+  source: librispeech_dummy
+- id: libri_007
+  file: evals/audio/libri_007.wav
+  text: painting he tells us is of a different quality to mathematics and finish in
+    art is adding more fact
+  source: librispeech_dummy
+- id: libri_008
+  file: evals/audio/libri_008.wav
+  text: as for etchings they are of two kinds british and foreign
+  source: librispeech_dummy
+- id: libri_009
+  file: evals/audio/libri_009.wav
+  text: he laments most bitterly the divorce that has been made between decorative
+    art and what we usually call pictures makes the customary appeal to the last judgment
+    and reminds us that in the great days of art michael angelo was the furnishing
+    upholsterer
+  source: librispeech_dummy
+- id: libri_010
+  file: evals/audio/libri_010.wav
+  text: near the fire and the ornaments fred brought home from india on the mantel
+    board
+  source: librispeech_dummy
+- id: libri_011
+  file: evals/audio/libri_011.wav
+  text: in fact he is quite severe on mister ruskin for not recognising that a picture
+    should denote the frailty of man and remarks with pleasing courtesy and felicitous
+    grace that many phases of feeling
+  source: librispeech_dummy
+- id: libri_012
+  file: evals/audio/libri_012.wav
+  text: only unfortunately his own work never does get good
+  source: librispeech_dummy
+- id: libri_013
+  file: evals/audio/libri_013.wav
+  text: mister quilter has missed his chance for he has failed even to make himself
+    the tupper of painting
+  source: librispeech_dummy
+- id: libri_014
+  file: evals/audio/libri_014.wav
+  text: by harry quilter m a
+  source: librispeech_dummy
+- id: libri_015
+  file: evals/audio/libri_015.wav
+  text: because you were sleeping instead of conquering the lovely rose princess has
+    become a fiddle without a bow while poor shaggy sits there a cooing dove
+  source: librispeech_dummy
+- id: libri_016
+  file: evals/audio/libri_016.wav
+  text: he has gone and gone for good answered polychrome who had managed to squeeze
+    into the room beside the dragon and had witnessed the occurrences with much interest
+  source: librispeech_dummy
+- id: libri_017
+  file: evals/audio/libri_017.wav
+  text: i have remained a prisoner only because i wished to be one and with this he
+    stepped forward and burst the stout chains as easily as if they had been threads
+  source: librispeech_dummy
+- id: libri_018
+  file: evals/audio/libri_018.wav
+  text: the little girl had been asleep but she heard the raps and opened the door
+  source: librispeech_dummy
+- id: libri_019
+  file: evals/audio/libri_019.wav
+  text: the king has fled in disgrace and your friends are asking for you
+  source: librispeech_dummy
+- id: libri_020
+  file: evals/audio/libri_020.wav
+  text: i begged ruggedo long ago to send him away but he would not do so
+  source: librispeech_dummy
+- id: libri_021
+  file: evals/audio/libri_021.wav
+  text: i also offered to help your brother to escape but he would not go
+  source: librispeech_dummy
+- id: libri_022
+  file: evals/audio/libri_022.wav
+  text: he eats and sleeps very steadily replied the new king
+  source: librispeech_dummy
+- id: libri_023
+  file: evals/audio/libri_023.wav
+  text: i hope he doesn't work too hard said shaggy
+  source: librispeech_dummy
+- id: libri_024
+  file: evals/audio/libri_024.wav
+  text: he doesn't work at all
+  source: librispeech_dummy
+- id: libri_025
+  file: evals/audio/libri_025.wav
+  text: in fact there is nothing he can do in these dominions as well as our nomes
+    whose numbers are so great that it worries us to keep them all busy
+  source: librispeech_dummy
+- id: libri_026
+  file: evals/audio/libri_026.wav
+  text: not exactly returned kaliko
+  source: librispeech_dummy
+- id: libri_027
+  file: evals/audio/libri_027.wav
+  text: where is my brother now
+  source: librispeech_dummy
+- id: libri_028
+  file: evals/audio/libri_028.wav
+  text: inquired shaggy in the metal forest
+  source: librispeech_dummy
+- id: libri_029
+  file: evals/audio/libri_029.wav
+  text: where is that
+  source: librispeech_dummy

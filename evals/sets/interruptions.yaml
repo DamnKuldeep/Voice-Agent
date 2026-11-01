@@ -1,0 +1,17 @@
+# Scripted overlaps for scripts/run_eval.py --set interruptions (results in docs/benchmarks.md).
+# Every trial: Kokoro asks the question, the agent starts its long answer, then something is injected
+# offset_s seconds after the agent's first audio. --n rounds of every scenario; each round's real
+# interruption uses a different recording.
+question: Tell me about the history of the Taj Mahal in detail.
+clip_manifest: public_utterances.yaml        # real interruptions: recordings with reference text
+clip_source: common_voice_indian_accent
+backchannels: ["Yeah.", "Mm-hmm.", "Okay."]  # spoken by Kokoro; round r uses entry r mod 3
+observe_after_s: 3.0     # after the injected sound ends, how long to watch before calling it "not stopped"
+echo_observe_s: 12.0     # how much of the reply to play with the echo loop-back on
+scenarios:
+  - {id: interrupt_1s, kind: interrupt, offset_s: 1.0}
+  - {id: interrupt_3s, kind: interrupt, offset_s: 3.0}
+  - {id: backchannel_1s, kind: backchannel, offset_s: 1.0}
+  - {id: cough_1s, kind: noise, offset_s: 1.0}
+  # The agent's own output fed back into the mic for the whole reply: speakers, no echo cancellation.
+  - {id: echo_-15db, kind: echo, gain_db: -15.0, delay_ms: 60.0}
